@@ -4,7 +4,7 @@
   "version": "0.0.0",
   "type": "module",
   "repository": "https://github.com/kira-khutornaya/vite-project.git",
-  "homepage": "https://kira-khutornaya.github.io/vite-project",
+  "homepage": "https://kira-khutornaya.github.io/vite-project/",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
