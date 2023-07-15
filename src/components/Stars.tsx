@@ -12,7 +12,7 @@ function Stars({ count = 0}: StarsProps) {
     <ul className="card-body-stars u-clearfix">
       <li className="card-body-star">
       {
-        [...new Array(count)].map(() => (
+        [...new Array<number>(count)].map(() => (
           <Star key={nanoid()} />
         ))
       }
