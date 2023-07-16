@@ -7,7 +7,7 @@ interface StarsProps {
 
 const ratingCount: number[] = [1, 2, 3, 4, 5];
 
-function Stars({ count = 0}: StarsProps) {
+function Stars({ count = 0 }: StarsProps) {
   return ratingCount.includes(count) && (
     <ul className="card-body-stars u-clearfix">
       <li className="card-body-star">

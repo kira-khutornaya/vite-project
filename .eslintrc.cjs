@@ -4,6 +4,7 @@ module.exports = {
   root: true,
   env: { browser: true, es2020: true },
   extends: [
+    'airbnb-typescript',
     'eslint:recommended',
     'plugin:@typescript-eslint/recommended',
     'plugin:@typescript-eslint/recommended-requiring-type-checking',
@@ -16,8 +17,19 @@ module.exports = {
     project: true,
     tsconfigRootDir: __dirname,
   },
-  plugins: ['react-refresh'],
+  plugins: ['react-refresh', 'import'],
   rules: {
+    'react/jsx-filename-extension': [0],
+    'import/extensions': [
+      'error',
+      'ignorePackages',
+      {
+        'js': 'never',
+        'jsx': 'never',
+        'ts': 'never',
+        'tsx': 'never'
+      }
+    ],
     'react-refresh/only-export-components': [
       'warn',
       { allowConstantExport: true },
